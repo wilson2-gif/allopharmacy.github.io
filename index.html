@@ -1,59 +1,233 @@
-# Politique de Confidentialité (Privacy Policy) - AllôPharmacy
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Politique de Confidentialité - AllôPharmacy</title>
+  <style>
+    :root{
+      --bg:#f7f7f8;
+      --card:#ffffff;
+      --accent:#4a2c2a;
+      --muted:#6b6b6b;
+      --maxw:900px;
+      --radius:10px;
+      --gap:18px;
+      --font: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--font);
+      background:linear-gradient(180deg,#fbfbfb,var(--bg));
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+      padding:32px 16px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+    }
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 8px 30px rgba(30,30,30,0.08);
+      padding:28px;
+      box-sizing:border-box;
+    }
+    header{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-bottom:8px;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:8px;
+      background:linear-gradient(135deg,#6b3b36,#3b1f1d);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-weight:700;
+      font-size:18px;
+      box-shadow:0 4px 12px rgba(60,30,30,0.12);
+    }
+    h1{
+      margin:0;
+      font-size:20px;
+      color:var(--accent);
+    }
+    .meta{
+      color:var(--muted);
+      font-size:13px;
+      margin-top:4px;
+    }
+    nav{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    nav a{
+      text-decoration:none;
+      color:var(--accent);
+      background:rgba(74,44,42,0.06);
+      padding:8px 12px;
+      border-radius:8px;
+      font-size:13px;
+    }
+    main{
+      margin-top:20px;
+    }
+    section{
+      margin-bottom:18px;
+      padding:16px;
+      border-radius:8px;
+      background:linear-gradient(180deg, rgba(250,250,250,0.6), transparent);
+      border:1px solid rgba(0,0,0,0.03);
+    }
+    h2{
+      margin:0 0 8px 0;
+      color:var(--accent);
+      font-size:16px;
+    }
+    p{margin:8px 0;color:#333}
+    ul{margin:8px 0 8px 20px;color:#333}
+    .muted{color:var(--muted);font-size:13px}
+    .actions{
+      display:flex;
+      gap:10px;
+      margin-top:12px;
+    }
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:14px;
+    }
+    .btn-primary{
+      background:var(--accent);
+      color:#fff;
+      box-shadow:0 6px 18px rgba(74,44,42,0.12);
+    }
+    .btn-ghost{
+      background:transparent;
+      color:var(--accent);
+      border:1px solid rgba(74,44,42,0.08);
+    }
+    footer{
+      margin-top:18px;
+      font-size:13px;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    @media (max-width:520px){
+      body{padding:18px}
+      .container{padding:18px}
+      .logo{width:48px;height:48px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div class="logo">AP</div>
+      <div>
+        <h1>Politique de Confidentialité - AllôPharmacy</h1>
+        <div class="meta">Dernière mise à jour : 15 Juin 2026</div>
+      </div>
+    </header>
 
-**Dernière mise à jour :** 15 Juin 2026
+    <nav aria-label="Sections">
+      <a href="#intro">Introduction</a>
+      <a href="#donnees">Données collectées</a>
+      <a href="#utilisation">Utilisation</a>
+      <a href="#partage">Partage et protection</a>
+      <a href="#suppression">Suppression des données</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-## 1. Introduction
+    <main>
+      <section id="intro" aria-labelledby="intro-title">
+        <h2 id="intro-title">1. Introduction</h2>
+        <p><strong>Bienvenue sur AllôPharmacy.</strong> La présente Politique de Confidentialité a pour but de vous expliquer comment nous recueillons, utilisons, protégeons et partageons vos informations personnelles lorsque vous utilisez notre application mobile et nos services, notamment lorsque vous choisissez de vous connecter via Facebook (Facebook Login).</p>
+        <p class="muted">En utilisant l'application AllôPharmacy, vous acceptez les pratiques décrites dans cette politique.</p>
+      </section>
 
-Bienvenue sur **AllôPharmacy**. La présente Politique de Confidentialité a pour but de vous expliquer comment nous recueillons, utilisons, protégeons et partageons vos informations personnelles lorsque vous utilisez notre application mobile et nos services, notamment lorsque vous choisissez de vous connecter via Facebook (Facebook Login).
+      <section id="donnees" aria-labelledby="donnees-title">
+        <h2 id="donnees-title">2. Données collectées via Facebook Login</h2>
+        <p>Si vous choisissez de vous connecter avec Facebook, nous recevons de Facebook les informations que vous autorisez :</p>
+        <ul>
+          <li><strong>Profil public</strong> : prénom, nom et photo de profil.</li>
+          <li><strong>Adresse e‑mail</strong> : l'adresse associée à votre compte Facebook.</li>
+        </ul>
+        <p class="muted">Note : AllôPharmacy ne demande aucune autorisation pour publier sur votre mur, accéder à votre liste d'amis ou lire vos messages privés.</p>
+      </section>
 
-En utilisant l'application AllôPharmacy, vous acceptez les pratiques décrites dans cette politique.
+      <section id="utilisation" aria-labelledby="utilisation-title">
+        <h2 id="utilisation-title">3. Utilisation de vos données</h2>
+        <p>Les informations recueillies sont utilisées uniquement pour :</p>
+        <ul>
+          <li><strong>Création et gestion de compte</strong> : identification unique sur la plateforme.</li>
+          <li><strong>Personnalisation</strong> : afficher votre nom et photo dans l'application.</li>
+          <li><strong>Communication</strong> : vous informer des mises à jour importantes.</li>
+          <li><strong>Fonctionnement</strong> : lier recherches et historiques de géolocalisation de pharmacies à votre compte pour un service sur mesure.</li>
+        </ul>
+      </section>
 
-## 2. Données collectées via Facebook Login
+      <section id="partage" aria-labelledby="partage-title">
+        <h2 id="partage-title">4. Partage et protection de vos données</h2>
+        <ul>
+          <li><strong>Non-revente</strong> : nous ne vendons, louons ni commercialisons jamais vos informations personnelles.</li>
+          <li><strong>Sécurité</strong> : stockage sécurisé via notre infrastructure Supabase et protocoles de chiffrement standards.</li>
+          <li><strong>Services tiers</strong> : partage limité aux prestataires nécessaires au fonctionnement technique, soumis aux mêmes obligations de confidentialité.</li>
+        </ul>
+      </section>
 
-Afin de faciliter votre inscription et votre connexion à notre application, nous vous offrons la possibilité d'utiliser la fonctionnalité de connexion via Facebook (Facebook OAuth). 
+      <section id="suppression" aria-labelledby="suppression-title">
+        <h2 id="suppression-title">5. Suppression des données utilisateurs</h2>
+        <p>Conformément au RGPD et aux exigences Facebook Developer, vous pouvez demander la suppression totale de vos données. Deux options :</p>
 
-Si vous choisissez de vous connecter avec Facebook, nous recevons de la part de Facebook les informations suivantes (conformément aux autorisations que vous avez validées sur l'écran d'autorisation Facebook) :
+        <h3 style="margin:10px 0 6px 0;color:#444;font-size:14px">Option 1 Directement dans l'application</h3>
+        <ol>
+          <li>Ouvrez l'application AllôPharmacy.</li>
+          <li>Allez dans le menu "Profil" ou "Paramètres".</li>
+          <li>Cliquez sur "Supprimer mon compte".</li>
+          <li>Confirmez : vos données seront effacées de nos serveurs.</li>
+        </ol>
 
-* **Votre profil public :** Votre prénom, votre nom de famille et votre photo de profil.
-* **Votre adresse e-mail :** L'adresse e-mail associée à votre compte Facebook.
+        <h3 style="margin:10px 0 6px 0;color:#444;font-size:14px">Option 2 Par e‑mail</h3>
+        <p>Envoyez une demande à <strong>support@allopharmacy.com</strong> avec l'objet <em>Demande de suppression de données Facebook</em> et l'adresse e‑mail associée à votre compte. Nous traiterons la demande sous <strong>7 jours ouvrés</strong>.</p>
+      </section>
 
-*Note : AllôPharmacy ne demande **aucune** autorisation pour publier sur votre mur, accéder à votre liste d'amis Facebook ou lire vos messages privés.*
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">6. Contact</h2>
+        <p>Pour toute question concernant cette politique ou le traitement de vos données :</p>
+        <ul>
+          <li><strong>Email</strong> : <a href="mailto:SUPPORT@allopharmacy.com">SUPPORT@allopharmacy.com</a></li>
+          <li><strong>Téléphone</strong> : +237 6 81 15 28 16</li>
+        </ul>
+      </section>
 
-## 3. Utilisation de vos données
-
-Les informations recueillies via Facebook Login (et autres méthodes d'authentification) sont utilisées exclusivement pour les finalités suivantes :
-
-* **Création et gestion de votre compte :** Pour vous identifier de manière unique sur notre plateforme.
-* **Personnalisation de l'expérience :** Pour afficher votre nom et votre photo de profil au sein de l'application.
-* **Communication :** Pour vous contacter concernant des mises à jour importantes de sécurité ou de service.
-* **Fonctionnement de l'application :** Lier vos recherches et vos historiques de géolocalisation de pharmacies à votre compte utilisateur personnel, afin de vous fournir un service sur mesure.
-
-## 4. Partage et protection de vos données
-
-* **Non-revente des données :** AllôPharmacy s'engage formellement à ne **jamais vendre, louer ni commercialiser** vos informations personnelles, y compris celles obtenues via Facebook, à des tiers.
-* **Sécurité :** Vos données sont stockées de manière sécurisée (via notre infrastructure Supabase) avec des protocoles de cryptage standards de l'industrie pour prévenir tout accès non autorisé.
-* **Services Tiers :** Nous ne partageons vos données qu'avec les prestataires de services strictement nécessaires au fonctionnement technique de l'application (par exemple, notre base de données sécurisée), et qui sont soumis aux mêmes obligations de confidentialité.
-
-## 5. Suppression des données utilisateurs (Data Deletion Instructions)
-
-Conformément au Règlement Général sur la Protection des Données (RGPD) et aux exigences de la plateforme Facebook Developer, vous disposez d'un droit total et absolu de demander la suppression de vos données personnelles.
-
-Pour supprimer votre compte AllôPharmacy et toutes les données associées (y compris celles provenant de Facebook), deux options s'offrent à vous :
-
-**Option 1 : Directement dans l'application**
-
-1. Ouvrez l'application AllôPharmacy.
-2. Allez dans le menu "Profil" ou "Paramètres".
-3. Cliquez sur l'option "Supprimer mon compte".
-4. Confirmez votre choix. Vos données seront immédiatement et définitivement effacées de nos serveurs.
-
-**Option 2 : Via une demande par E-mail**
-Vous pouvez formuler une demande de suppression de données par e-mail en nous contactant à : support@allopharmacy.com
-Veuillez utiliser l'objet *"Demande de suppression de données Facebook"* et inclure l'adresse e-mail associée à votre compte. Nous traiterons votre demande dans un délai maximum de 7 jours ouvrés et vous enverrons une confirmation.
-
-## 6. Contact
-
-Pour toute question concernant cette politique de confidentialité ou le traitement de vos données, vous pouvez nous contacter à l'adresse suivante :
-
-* **Email :** SUPPORT@allopharmacy.com
-* **Téléphone (Cameroun) :** +237 6 81 15 28 16
+      <footer>
+        <div class="muted">AllôPharmacy — Politique de Confidentialité</div>
+        <div class="actions">
+          <a class="btn btn-primary" href="#suppression">Supprimer mon compte</a>
+          <a class="btn btn-ghost" href="mailto:SUPPORT@allopharmacy.com">Contacter le support</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
